@@ -11,7 +11,7 @@ body {
   --font-family-primary: 'Roboto', Arial;
   --handwriting-font: 'Hindi Font', cursive;
   --primary-color: #1a73e8;
-  --ink-color: #000f55;
+  --ink-color: black;
   --label-color: #333;
   --field-borders: #e0e0e0;
   --primary-button-bg: crimson;
@@ -26,7 +26,7 @@ body.dark {
   --background-primary: #121212;
   --font-color-primary: #ccc;
   --elevation-background: #1d1d1d;
-  --link-color: #09f;
+  --link-color: black;
   --label-color: #aaa;
   --field-borders: #222;
   --primary-button-bg: crimson;
