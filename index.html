@@ -36,7 +36,7 @@
     <meta name="twitter:creator" content="@fitrailyasa" />
     <link rel="manifest" href="./manifest.webmanifest" />
 
-    <!-- Judul -->
+    <!-- Judul Website -->
     <title>Dicobot Nulis</title>
 
     <!-- Favicon -->
@@ -81,7 +81,12 @@
           <img alt="darkmode to dark mode "  width="50px" src="assets/ico/darkmode.png"/></span>
       </button>
 
-      <h2>DICOBOT NULIS</h2>
+      <!-- Judul -->
+      <h2>DICOBOT
+        <span class="nulis">
+          NULIS
+        </span>
+      </h2>
 
       <section class="generate-image-section">
         <br /><br />
@@ -281,27 +286,22 @@
                   </div>
                 </div>
               </fieldset>
-
-              <!-- TOMBOL GENERATE GAMBAR -->
-              <hr
-                style="
-                  border: 0.3px solid var(--elevation-background);
-                  width: 80%;
-                "
-              />
-              <div style="text-align: center; padding: 30px 0px;">
+              
+              <div>
                 <button
-                  type="submit"
-                  data-testid="generate-image-button"
-                  class="button generate-image-button"
+                  id="draw-diagram-button"
+                  type="button"
+                  style="font-size: 0.9rem; margin-top: 5px;"
+                  class="draw-button"
                 >
-                  Generate Gambar
+                  Gambar Manual
                 </button>
               </div>
+      
             </div>
             <div class="flex-1 page-container-super">
               <div>
-                <h2 style="margin-top: 0px;">Teks</h2>
+                <h3 style="margin-top: 0px;">Teks</h3>
                 <label class="block" for="note">Ketik/Tempel teks di sini</label>
               </div>
 
@@ -336,14 +336,21 @@
                 <br />
               </div>
 
-              <div>
+              
+              <!-- TOMBOL GENERATE GAMBAR -->
+              <hr
+                style="
+                  border: 0.3px solid var(--elevation-background);
+                  width: 80%;
+                "
+              />
+              <div style="text-align: center; padding: 30px 0px;">
                 <button
-                  id="draw-diagram-button"
-                  type="button"
-                  style="font-size: 0.9rem; margin-top: 5px;"
-                  class="draw-button"
+                  type="submit"
+                  data-testid="generate-image-button"
+                  class="button generate-image-button"
                 >
-                  Gambar Manual
+                  Generate Gambar
                 </button>
               </div>
             </div>
@@ -355,7 +362,7 @@
 
       <!-- HASIL -->
       <section>
-        <h2 id="output-header">Hasil</h2>
+        <h3 id="output-header">Hasil</h3>
         <div id="output" class="output" style="text-align: center;">
           Klik Tombol "Generate Gambar" untuk menghasilkan gambar baru.
         </div>

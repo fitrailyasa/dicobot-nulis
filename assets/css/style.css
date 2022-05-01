@@ -14,7 +14,7 @@ body {
   --ink-color: #000f55;
   --label-color: #333;
   --field-borders: #e0e0e0;
-  --primary-button-bg: #1d1d1d;
+  --primary-button-bg: crimson;
   --primary-button-color: #eee;
   --font-color-delete: #dc3545;
   --delete-button-borders: #dc3545;
@@ -29,8 +29,8 @@ body.dark {
   --link-color: #09f;
   --label-color: #aaa;
   --field-borders: #222;
-  --primary-button-bg: #eee;
-  --primary-button-color: #111;
+  --primary-button-bg: crimson;
+  --primary-button-color: #eee;
   --delete-button-borders: #e76f7b;
   --font-color-delete: #e76f7b;
 }
@@ -66,8 +66,9 @@ button {
   padding: 10px 20px;
 }
 
-h1 {
-  font-size: 3rem;
+h2 {
+  font-size: 2rem;
+  padding-left: 50px;
 }
 
 label {
@@ -127,6 +128,10 @@ ul.info-ul {
 
 ul.info-ul > li {
   padding: 5px 5px;
+}
+
+.nulis{
+  color: crimson;
 }
 
 .shadow {
