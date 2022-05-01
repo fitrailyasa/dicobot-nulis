@@ -1,0 +1,21 @@
+{
+  "name": "Dicobot Nulis",
+  "short_name": "Dicobot Nulis",
+  "icons": [
+    {
+      "src": "ico/mstile-150x150.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "ico/mstile-310x310.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "crimson",
+  "background_color": "#ddd",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Males nulis dikertas? yuk coba Dicobot Nulis. Dicobot Nulis merupakan website nulis otomatis bagi kalian yg nulis manual dikertas"
+}

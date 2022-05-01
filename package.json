@@ -1,0 +1,43 @@
+{
+  "name": "dicobot-nulis",
+  "version": "1.0",
+  "description": "Males nulis dikertas? yuk coba Dicobot Nulis. Dicobot Nulis merupakan website nulis otomatis bagi kalian yg nulis manual dikertas",
+  "main": "js/app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "cypress run",
+    "eslint": "eslint --fix \"js/**/**.mjs\"",
+    "prettier": "prettier --write \"./index.html\" \"js/**/**.mjs\" \"css/**.css\"",
+    "format": "npm run prettier",
+    "cy": "cypress open",
+    "dev": "serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fitrailyasa/dicobot-nulis.git"
+  },
+  "keywords": [],
+  "author": "Fitra Ilyasa <fitrailyasa12@gmail.com> (https://fitrailyasa.github.io/portfolio)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fitrailyasa/dicobot-nulis/issues"
+  },
+  "homepage": "https://github.com/fitrailyasa/dicobot-nulis#readme",
+  "devDependencies": {
+    "cypress": "^4.4.1",
+    "eslint": "^7.0.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "serve": "^11.3.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier && eslint . --fix && npm run eslint"
+    }
+  }
+}
