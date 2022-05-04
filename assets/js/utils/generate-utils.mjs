@@ -5,7 +5,6 @@ const overlayEl = document.querySelector('.overlay');
 let paperContentPadding;
 
 function isFontErrory() {
-  // SOme fonts have padding top errors, this functions tells you if the current font has that;
   const currentHandwritingFont = document.body.style.getPropertyValue(
     '--handwriting-font'
   );
@@ -19,7 +18,6 @@ function applyPaperStyles() {
   pageEl.style.border = 'none';
   pageEl.style.overflowY = 'hidden';
 
-  // Adding class shadows even if effect is scanner
   if (document.querySelector('#page-effects').value === 'scanner') {
     overlayEl.classList.add('shadows');
   } else {
@@ -27,8 +25,6 @@ function applyPaperStyles() {
   }
 
   if (document.querySelector('#page-effects').value === 'scanner') {
-    // For scanner, we need shadow between 50deg to 120deg only
-    // Since If the lit part happens to be on margins, the margins get invisible
     overlayEl.style.background = `linear-gradient(${
       Math.floor(Math.random() * (120 - 50 + 1)) + 50
     }deg, #0008, #0000)`;
@@ -64,7 +60,7 @@ function removePaperStyles() {
 function renderOutput(outputImages) {
   if (outputImages.length <= 0) {
     document.querySelector('#output').innerHTML =
-      'Click "Generate Image" Button to generate new image.';
+      'Klik Tombol "Generate Gambar" untuk menghasilkan gambar baru.';
     document.querySelector('#download-as-pdf-button').classList.remove('show');
     document.querySelector('#delete-all-button').classList.remove('show');
     return;

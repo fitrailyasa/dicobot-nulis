@@ -8,10 +8,6 @@ import { createPDF } from './utils/helpers.mjs';
 const pageEl = document.querySelector('.page-a');
 let outputImages = [];
 
-/**
- * To generate image, we add styles to DIV and converts that HTML Element into Image.
- * This is the function that deals with it.
- */
 async function convertDIVToImage() {
   const options = {
     scrollX: 0,
@@ -20,10 +16,8 @@ async function convertDIVToImage() {
     useCORS: true
   };
 
-  /** Function html2canvas comes from a library html2canvas which is included in the index.html */
   const canvas = await html2canvas(pageEl, options);
 
-  /** Send image data for modification if effect is scanner */
   if (document.querySelector('#page-effects').value === 'scanner') {
     const context = canvas.getContext('2d');
     const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
@@ -56,7 +50,7 @@ export async function generateImages() {
     // For multiple pages
     if (paperContentEl.innerHTML.includes('<img')) {
       alert(
-        "You're trying to generate more than one page, Images and some formatting may not work correctly with multiple images" // eslint-disable-line max-len
+        "Anda mencoba membuat lebih dari satu halaman, Gambar dan beberapa pemformatan mungkin tidak berfungsi dengan benar dengan banyak gambar"
       );
     }
     const initialPaperContent = paperContentEl.innerHTML;
@@ -102,7 +96,7 @@ export const deleteAll = () => {
   outputImages.splice(0, outputImages.length);
   renderOutput(outputImages);
   document.querySelector('#output-header').textContent =
-    'Output' + (outputImages.length ? ' ( ' + outputImages.length + ' )' : '');
+    'Hasil' + (outputImages.length ? ' ( ' + outputImages.length + ' )' : '');
 };
 
 const arrayMove = (arr, oldIndex, newIndex) => {
@@ -175,7 +169,6 @@ function setRemoveImageListeners() {
   });
 }
 
-/** Modifies image data to add contrast */
 
 function contrastImage(imageData, contrast) {
   const data = imageData.data;

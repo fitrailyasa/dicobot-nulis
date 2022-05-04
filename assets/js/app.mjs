@@ -31,7 +31,7 @@ const EVENT_MAP = {
     on: 'change',
     action: (e) => {
       if (e.target.value > 30) {
-        alert('Font-size is too big try upto 30');
+        alert('Ukuran font terlalu besar, coba maksimal 30');
       } else {
         setTextareaStyle('fontSize', e.target.value + 'pt');
         e.preventDefault();
@@ -42,7 +42,7 @@ const EVENT_MAP = {
     on: 'change',
     action: (e) => {
       if (e.target.value > 40) {
-        alert('Letter Spacing is too big try a number upto 40');
+        alert('Spasi Huruf terlalu besar, coba angka hingga 40');
       } else {
         setTextareaStyle('letterSpacing', e.target.value + 'px');
         e.preventDefault();
@@ -53,7 +53,7 @@ const EVENT_MAP = {
     on: 'change',
     action: (e) => {
       if (e.target.value > 100) {
-        alert('Word Spacing is too big try a number upto hundred');
+        alert('Spasi Kata terlalu besar, coba angka hingga ratusan');
       } else {
         setTextareaStyle('wordSpacing', e.target.value + 'px');
         e.preventDefault();

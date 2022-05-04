@@ -82,7 +82,7 @@ label.block {
 }
 
 select {
-  background: url('../images/dropdown.svg') no-repeat;
+  background: url('../assets/ico/dropdown.svg') no-repeat;
   background-position: calc(100% - 14px) center;
   border: none;
   color: #333;
@@ -98,7 +98,7 @@ option {
 }
 
 body.dark select {
-  background: url('../images/dropdown-white.svg') no-repeat;
+  background: url('../assets/ico/dropdown-white.svg') no-repeat;
   background-position: calc(100% - 14px) center;
 }
 
